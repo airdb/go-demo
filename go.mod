@@ -1,4 +1,4 @@
-module github.com/airdb/golang-demo
+module github.com/airdb/go-demo
 
 go 1.17
 
