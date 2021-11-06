@@ -3,7 +3,7 @@ package ja3_test
 import (
 	"testing"
 
-	"github.com/airdb/golang-demo/ja3"
+	"github.com/airdb/go-demo/ja3"
 )
 
 func TestJa3(t *testing.T) {
