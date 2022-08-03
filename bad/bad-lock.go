@@ -1,5 +1,7 @@
 package main
 
+// https://go.dev/play/p/O49Whrfqhoj
+
 import (
 	"fmt"
 	"sync"
