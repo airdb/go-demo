@@ -1,6 +1,12 @@
 package main
 
-// https://go.dev/play/p/O49Whrfqhoj
+/*
+Reference:
+CN: https://blog.csdn.net/xyz347/article/details/83902123
+ENG: https://github.com/scylladb/gemini/issues/246
+Example:
+https://go.dev/play/p/O49Whrfqhoj
+*/
 
 import (
 	"fmt"
