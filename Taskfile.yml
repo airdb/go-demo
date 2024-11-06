@@ -1,0 +1,25 @@
+version: '3'
+
+vars:
+  SERVICE: go-demo
+  DATE:
+    sh: date "+%Y.%m%d.%H%M"
+
+tasks:
+  default:
+    desc: Show help messages
+    silent: true
+    cmds:
+      - echo "Learn golang!"
+      - echo
+      - |
+        task --list-all
+
+  dev:
+    desc: Run code locally
+    cmds:
+      - go run main.go dev
+  build:
+    desc: build code and output
+    cmds:
+      - go build -o output/demo main.go

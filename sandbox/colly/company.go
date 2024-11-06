@@ -1,4 +1,4 @@
-package main
+package colly
 
 import (
 	"fmt"
@@ -8,17 +8,19 @@ import (
 	"github.com/gocolly/colly/extensions"
 )
 
-func main() {
+func SpiderCompanyInfo() {
 	c := colly.NewCollector()
 
 	extensions.RandomUserAgent(c)
 	extensions.Referer(c)
 
-	err := c.SetProxy("http://116.108.202.236:41113")
-	if err != nil {
-		log.Println(err)
-		panic("set proxy fail")
-	}
+	/*
+		err := c.SetProxy("http://116.108.202.236:41113")
+		if err != nil {
+			log.Println(err)
+			panic("set proxy fail")
+		}
+	*/
 
 	// Set error handler
 	c.OnError(func(r *colly.Response, err error) {
@@ -39,5 +41,5 @@ func main() {
 	})
 
 	log.Println("start...")
-	c.Visit("https://www.baidu.com/robots.txt")
+	c.Visit("https://www.sgpbusiness.com/company/Marnix-Reinsurance-Brokers-Pte-Ltd")
 }

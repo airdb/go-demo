@@ -11,7 +11,7 @@ type Resp struct {
 	Url    string `json:"url"`
 }
 
-func main() {
+func RunDemo() {
 
 	client := resty.New()
 	var resp Resp
