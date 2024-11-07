@@ -19,7 +19,17 @@ tasks:
     desc: Run code locally
     cmds:
       - go run main.go dev
+  build:go-chat:
+    desc: build go chat
+    cmds:
+      - go build -o output/server github/chat-app/server/main.go
+      - go build -o output/client github/chat-app/client/main.go
+
   build:
     desc: build code and output
     cmds:
       - go build -o output/demo main.go
+  dbshell:
+    desc: Enter to db
+    cmds:
+      - sqlite3 test.db

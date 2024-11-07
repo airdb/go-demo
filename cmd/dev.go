@@ -4,7 +4,7 @@ Copyright © 2024 NAME HERE <EMAIL ADDRESS>
 package cmd
 
 import (
-	"demo/sandbox/sqlite"
+	"demo/github/go-collections"
 	"fmt"
 
 	"github.com/spf13/cobra"
@@ -20,7 +20,8 @@ Currently supports:
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println("dev called")
 		// emailutil.RunSendEmail()
-		sqlite.RunDemo()
+		// sqlite.RunDemo()
+		collections.RunCollection()
 	},
 }
 

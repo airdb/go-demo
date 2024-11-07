@@ -1,4 +1,4 @@
-package main
+package template
 
 import (
 	"html/template"
@@ -9,7 +9,7 @@ type Data struct {
 	DataFields []string
 }
 
-func main() {
+func TemplateRun() {
 	t := template.Must(template.New("").Parse(`{{range $san := .DataFields}} {{$san}} {{end}}`))
 	t.Execute(os.Stdout, Data{DataFields: []string{"A", "B", "C"}})
 }
